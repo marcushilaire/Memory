@@ -2,6 +2,11 @@ import React, {Component} from "react";
 import './App.css';
 import Cards from './components/Cards'
 import heroes from './Cards.json';
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Hero from './components/Hero'
+ 
+
 
 class App extends Component {
   state={
@@ -49,17 +54,20 @@ handleClick=(childName)=>{
 
   render(){
   return(
-  <div className="container">
-  <div className="row"> 
-  score:{this.state.score}
-  bestScore:{this.state.bestScore}
-  name:{this.state.clicked}  
-    {heroes.map(arr=>
-    <div key={arr.name} className="col-md-2 col-sm-4 col-xs-6">
-    {/* <div>hellooooooo</div> */}
-    <Cards handleClick={this.handleClick} name={arr.name}/>
-    </div>)}
+  <div>
+    {/* full container div */}    
+    <Hero />
+    <Header score={this.state.score}
+        bestScore={this.state.bestScore}/>
+    <div className="container">
+      <div className="row"> 
+        {heroes.map(arr=>
+        <div key={arr.name} className="col-md-2 col-sm-4 col-xs-6 mb-4">
+        <Cards handleClick={this.handleClick} name={arr.name}/>
+        </div>)}
+      </div>
   </div>
+  <Footer />
 </div>
     )
     };
