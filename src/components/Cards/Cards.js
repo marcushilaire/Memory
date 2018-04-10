@@ -5,12 +5,12 @@ import ShotoImg from "../../images/Shoto.png";
 import EndeavorImg from "../../images/Endeavor.png";
 import AllMightImg from "../../images/AllMight.png";
 import IidaImg from "../../images/Iida.png";
-import TomuraImg from "../../images/Tomura.png";
 import UrahakaImg from "../../images/Urahaka.png";
 import JiroImg from "../../images/Jiro.png";
 import MomoImg from "../../images/Momo.png";
 import ToruImg from "../../images/Toru.png";
 import AshidoImg from "../../images/Ashido.png";
+import EraserImg from "../../images/Eraser.png";
 
 class Cards extends Component {
 //Generate images based on map function in apps.js
@@ -27,8 +27,8 @@ imageGen=()=>{
     return EndeavorImg}else
     if(this.props.name=== "Iida"){
     return IidaImg}else
-    if(this.props.name=== "Tomura"){
-    return TomuraImg}else
+    if(this.props.name=== "Eraser"){
+    return EraserImg}else
     if(this.props.name=== "Urahaka"){
     return UrahakaImg}else
     if(this.props.name=== "Ashido"){

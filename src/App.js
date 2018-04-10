@@ -10,6 +10,13 @@ class App extends Component {
     bestScore:0,
 
   };
+//shuffle the cards
+handleShuffle=()=>{
+  console.log(heroes)
+heroes.sort(() => {
+  return 0.5 - Math.random();
+})
+}
 //update the score
 handleScore = () => {
   if(this.state.score===this.state.bestScore){
@@ -31,6 +38,7 @@ updateClicked= (childName)=>{
 // send on click functions to the child and handle the game functionality
 handleClick=(childName)=>{
   // this.handleBestScore(this.state.score)
+  this.handleShuffle()
   if (this.state.clicked.includes(childName)){
     this.setState({score: 0,clicked:[]})
     return
@@ -42,7 +50,7 @@ handleClick=(childName)=>{
   render(){
   return(
   <div className="container">
-  <div className="row">
+  <div className="row"> 
   score:{this.state.score}
   bestScore:{this.state.bestScore}
   name:{this.state.clicked}  
