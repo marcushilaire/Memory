@@ -27,10 +27,7 @@ updateClicked= (childName)=>{
 
   console.log(this.state.clicked)
 }
-// handleBestScore = (score)=>{
-// if(score>this.state.bestScore){
-//   this.setState({bestScore: this.state.score})
-// } }
+
 // send on click functions to the child and handle the game functionality
 handleClick=(childName)=>{
   // this.handleBestScore(this.state.score)

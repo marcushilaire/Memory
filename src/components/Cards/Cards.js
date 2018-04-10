@@ -7,9 +7,9 @@ import AllMightImg from "../../images/AllMight.png";
 import IidaImg from "../../images/Iida.png";
 import TomuraImg from "../../images/Tomura.png";
 import UrahakaImg from "../../images/Urahaka.png";
-import JiroImg from "../../images/Jiro.png"
-import MomoImg from "../../images/Momo.png"
-import ToruImg from "../../images/Toru.png"
+import JiroImg from "../../images/Jiro.png";
+import MomoImg from "../../images/Momo.png";
+import ToruImg from "../../images/Toru.png";
 import AshidoImg from "../../images/Ashido.png";
 
 class Cards extends Component {
