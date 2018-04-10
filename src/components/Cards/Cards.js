@@ -39,10 +39,7 @@ imageGen=()=>{
     return ToruImg}else
     if(this.props.name=== "Jiro"){
     return JiroImg}
-}
-helloLog=()=>{
-    console.log(this.props.name)
-}
+};
     //html
   render(){
     return(
